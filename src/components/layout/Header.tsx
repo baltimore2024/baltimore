@@ -10,7 +10,7 @@ import {
 import Image from "next/image";
 import { NAVLINKS } from "@/lib/const";
 import NavLink from "../shared/navlink";
-import { SideBarIcon } from "@/lib/icons";
+import { NavBarIcon } from "@/lib/icons";
 import { useState } from "react";
 import { BookOpen } from "lucide-react";
 
@@ -34,10 +34,10 @@ export default function Header() {
             />
           </div>
           <div className="flex items-center md:hidden gap-4 ">
-            <Button className="bg-purple-600 rounded-[10px] text-white">
+            <Button className="bg-[#6951DC] rounded-[10px] text-white">
               Get Started
             </Button>
-            <SideBarIcon onClick={openNav} />
+            <NavBarIcon onClick={openNav} />
           </div>
         </div>
 
@@ -56,12 +56,12 @@ export default function Header() {
               <SelectValue placeholder="Language" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="light">English</SelectItem>
-              <SelectItem value="dark">Deutsch</SelectItem>
-              <SelectItem value="system">French</SelectItem>
+              <SelectItem value="english">English</SelectItem>
+              <SelectItem value="deutsch">Deutsch</SelectItem>
+              <SelectItem value="french">French</SelectItem>
             </SelectContent>
           </Select>
-          <Button className="bg-purple-600 rounded-[10px] text-white">
+          <Button className="bg-[#6951DC] rounded-[10px] text-white">
             Get Started
           </Button>
         </div>

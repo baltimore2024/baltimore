@@ -166,61 +166,7 @@ export default function InitiativesPage() {
           </p>
         </div>
       </header>
-      <Separator className="bg-purple-600 border-2 border-purple-600 " />
-      <main className="max-w-6xl mx-auto py-12 px-4">
-        <div className="space-y-16">
-          {initiatives.map((initiative, index) => (
-            <div
-              key={index}
-              className="border-b border-gray-200 pb-16 last:border-b-0"
-            >
-              <div className="flex items-start">
-                <initiative.icon className="w-12 h-12 text-purple-600 mr-6 flex-shrink-0" />
-                <div>
-                  <h2 className="text-3xl font-bold mb-4">
-                    {initiative.title}
-                  </h2>
-                  <p className="text-xl text-gray-600 mb-6">
-                    {initiative.description}
-                  </p>
-                  <div className="grid md:grid-cols-3 gap-6">
-                    {initiative.subItems.map((item, subIndex) => (
-                      <div
-                        key={subIndex}
-                        className="bg-gray-100 p-6 rounded-lg"
-                      >
-                        <h3 className="text-xl font-semibold mb-2">
-                          {item.title}
-                        </h3>
-                        <p className="text-gray-600">{item.description}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </main>
-      <footer className="bg-purple-600 text-white py-12 px-4">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-6 md:mb-0">
-            <h3 className="text-2xl font-bold mb-2">
-              Join us in our initiatives
-            </h3>
-            <p className="max-w-md">
-              These initiatives reflect our commitment to creating a holistic
-              and inclusive approach to community development. By addressing
-              various aspects of community life, we aim to create a supportive
-              and thriving environment where everyone has the opportunity to
-              succeed.
-            </p>
-          </div>
-          <Button className="bg-white text-purple-600 hover:bg-gray-100">
-            Let's get in touch
-          </Button>
-        </div>
-      </footer>
+      <main className="max-w-6xl mx-auto py-12 px-4"></main>
     </div>
   );
 }

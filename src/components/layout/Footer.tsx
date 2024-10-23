@@ -1,71 +1,82 @@
 import { Button } from "@/components/ui/button";
+import { LocationIcon } from "@/lib/icons";
+import Link from "next/link";
 
 export default function Footer() {
   return (
-    // <footer className='bg-purple-600 text-white py-16 px-8'>
-    // 	<div className='max-w-6xl mx-auto grid md:grid-cols-2 gap-8'>
-    // 		<div>
-    // 			<h3 className='text-2xl font-bold mb-4'>
-    // 				Get started
-    // 			</h3>
-    // 			<p className='mb-6'>
-    // 				Join the Black Economic Improvement Corporation
-    // 				and be part of the change in your community.
-    // 			</p>
-    // 			<div className='flex space-x-4'>
-    // 				<Button
-    // 					variant='outline'
-    // 					className='text-white border-white hover:bg-white hover:text-purple-600'
-    // 				>
-    // 					Sign Up
-    // 				</Button>
-    // 				<Button
-    // 					variant='outline'
-    // 					className='text-white border-white hover:bg-white hover:text-purple-600'
-    // 				>
-    // 					Learn More
-    // 				</Button>
-    // 			</div>
-    // 		</div>
-    // 		<div>
-    // 			<h3 className='text-2xl font-bold mb-4'>
-    // 				Let's get in touch
-    // 			</h3>
-    // 			<p className='mb-6'>
-    // 				Have questions or want to get involved? Reach out
-    // 				to us and a team member will be in touch shortly.
-    // 			</p>
-    // 			<Button className='bg-white text-purple-600 hover:bg-gray-100'>
-    // 				Contact Us
-    // 			</Button>
-    // 		</div>
-    // 	</div>
-    // 	<div className='mt-12 text-center text-sm'>
-    // 		© 2024 Black Economic Improvement Corporation. All rights
-    // 		reserved.
-    // 	</div>
-    // </footer>
-    <footer className="bg-purple-600 text-white p-8">
-      <div className="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center">
-        <div className="mb-4 md:mb-0">
-          <h3 className="text-xl font-bold mb-2">
-            Join us in our initiatives to make a meaningful and lasting impact!
-          </h3>
-          <p className="max-w-md">
-            These initiatives reflect our commitment to creating a holistic and
-            inclusive approach to community development. By addressing various
-            aspects of personal and community growth, we aim to create a
-            supportive and thriving environment where everyone has the
-            opportunity to succeed.
-          </p>
+    <footer className="bg-[#6951DC] p-[30px] md:p-[80px] md:h-[530px] md:overflow-clip w-full ">
+      <div className="text-white flex gap-8 flex-col  md:flex-row ">
+        <div className="flex flex-col gap-20 ">
+          <div className="flex gap-10 flex-col md:flex-row">
+            <div className="flex flex-col gap-3">
+              <h3 className="text-[27px]">
+                Join us in our initiatives to make a meaningful and lasting
+                impact. Together, we can build a stronger, healthier, and more
+                vibrant community.
+              </h3>
+              <div className="md:flex hidden gap-3 items-center flex-row rounded-full border py-[15px] px-[20px] border-[#fff] bg-[#ffffff1b]">
+                <LocationIcon width="20" height="20" />
+                <p className="text-white text-[12px] md:text-[14px] ">
+                  305 E. Joppa Road, Towson Maryland 21286
+                </p>
+              </div>
+            </div>
+            <div>
+              <h3 className="text-[19px] ">
+                These initiatives reflect our commitment to creating a holistic
+                and inclusive approach to community development. By addressing
+                various aspects of community life, we aim to create a supportive
+                and thriving environment where everyone has the opportunity to
+                succeed.
+              </h3>
+              <div className="flex md:hidden gap-3 mt-[10px] items-center flex-row rounded-full border py-[15px] px-[20px] border-[#fff] bg-[#ffffff1b]">
+                <LocationIcon width="20" height="20" />
+                <p className="text-white text-[12px] md:text-[14px] ">
+                  305 E. Joppa Road, Towson Maryland 21286
+                </p>
+              </div>
+              <div className=" border-white border-[2px] mt-[20px] md:hidden md:h-[700px] flex flex-col gap-16 p-[30px] rounded-[20px] ">
+                <div className="flex gap-2 flex-col">
+                  <h1 className="text-[25px] text-center ">
+                    Let's get in touch
+                  </h1>
+                  <p className="text-[15px]">
+                    Have questions or want to get involved? Reach out to us
+                    through our contact page, and a member of our team will be
+                    happy to assist you.
+                  </p>
+                </div>
+                <Link href="/contact-us">
+                  <Button className="bg-[#ffffff1b] w-full py-[25px] rounded-full px ">
+                    Contact Us
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col md:flex-row gap-3  md:gap-6 ">
+            <p>
+              © 2024 Black Economic Improvement Forum, Inc. All rights reserved.
+            </p>
+            <Link href="">TERMS AND CONDITIONS</Link>
+            <Link href="">PRIVACY POLICY</Link>
+          </div>
         </div>
-        <div className="text-center md:text-right">
-          <h4 className="text-lg font-bold mb-2">Let's get in touch</h4>
-          <p className="mb-4">
-            Have questions or want to get involved? Reach out to us through our
-            contact form, and a team member will be in touch shortly.
-          </p>
-          <Button className="bg-white text-purple-600">Contact us</Button>
+
+        <div className=" border-white border-[2px] hidden md:h-[700px] md:flex flex-col gap-16 p-[30px] rounded-[20px] ">
+          <div className="flex gap-2 flex-col">
+            <h1 className="text-[25px] text-center ">Let's get in touch</h1>
+            <p className="text-[15px]">
+              Have questions or want to get involved? Reach out to us through
+              our contact page, and a member of our team will be happy to assist
+              you.
+            </p>
+          </div>
+          <Link href="/contact-us">
+            <Button className="bg-[#ffffff1b] w-full py-[25px] rounded-full px ">
+              Contact Us
+            </Button>
+          </Link>
         </div>
       </div>
     </footer>

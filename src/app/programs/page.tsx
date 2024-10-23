@@ -258,7 +258,7 @@ export default function ProgramsPage() {
 											className='bg-white'
 										>
 											<CardContent className='p-6'>
-												<item.icon className='w-12 h-12 text-purple-600 mb-4' />
+												<item.icon className='w-12 h-12 text-[#6951DC] mb-4' />
 												<h3 className='text-xl font-bold mb-2'>
 													{item.title}
 												</h3>
@@ -290,7 +290,7 @@ export default function ProgramsPage() {
 					))}
 				</div>
 			</main>
-			<footer className='bg-purple-600 text-white py-12'>
+			<footer className='bg-[#6951DC] text-white py-12'>
 				<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
 					<div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
 						<div className='col-span-2'>
@@ -309,7 +309,7 @@ export default function ProgramsPage() {
 							</p>
 						</div>
 						<div className='flex flex-col justify-center items-start'>
-							<Button className='bg-white text-purple-600 hover:bg-gray-100 mb-4'>
+							<Button className='bg-white text-[#6951DC] hover:bg-gray-100 mb-4'>
 								Let's get in touch
 							</Button>
 							<p className='text-sm'>

@@ -10,7 +10,7 @@ export default function NavLink({ link, title }: INavLink) {
     <div>
       <Link
         className={`${
-          pathName === link ? "text-purple-600 font-bold " : "text-bold"
+          pathName === link ? "text-[#6951DC] font-bold " : "text-bold"
         }`}
         href={link}
       >

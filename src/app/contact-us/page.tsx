@@ -24,17 +24,17 @@ export default function ContactUsPage() {
 						</p>
 						<div className='space-y-4'>
 							<div className='flex items-center'>
-								<Mail className='w-6 h-6 text-purple-600 mr-4' />
+								<Mail className='w-6 h-6 text-[#6951DC] mr-4' />
 								<span>
 									info@blackeconomicimprovementcorp.com
 								</span>
 							</div>
 							<div className='flex items-center'>
-								<Phone className='w-6 h-6 text-purple-600 mr-4' />
+								<Phone className='w-6 h-6 text-[#6951DC] mr-4' />
 								<span>+1 (410) 598-8055</span>
 							</div>
 							<div className='flex items-center'>
-								<MapPin className='w-6 h-6 text-purple-600 mr-4' />
+								<MapPin className='w-6 h-6 text-[#6951DC] mr-4' />
 								<span>
 									305 E. Joppa Road, Towson Maryland
 									21286
@@ -157,7 +157,7 @@ export default function ContactUsPage() {
 													)}
 												name='description'
 												type='radio'
-												className='h-4 w-4 text-purple-600 focus:ring-purple-500'
+												className='h-4 w-4 text-[#6951DC] focus:ring-purple-500'
 											/>
 											<label
 												htmlFor={choice
@@ -223,7 +223,7 @@ export default function ContactUsPage() {
 					></iframe>
 				</div>
 			</div>
-			<footer className='bg-purple-600 text-white py-16'>
+			<footer className='bg-[#6951DC] text-white py-16'>
 				<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
 					<div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
 						<div>
@@ -264,7 +264,7 @@ export default function ContactUsPage() {
 								page, and a member of our team will be
 								happy to assist you.
 							</p>
-							<Button className='bg-white text-purple-600 hover:bg-gray-100'>
+							<Button className='bg-white text-[#6951DC] hover:bg-gray-100'>
 								Contact us
 							</Button>
 						</div>

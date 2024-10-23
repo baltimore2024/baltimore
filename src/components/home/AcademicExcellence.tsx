@@ -109,7 +109,7 @@ export default function AcademicExcellence() {
 									programs are tailored to meet the
 									needs of our diverse community.
 								</p>
-								<p className='mt-4 text-lg font-medium text-purple-600'>
+								<p className='mt-4 text-lg font-medium text-[#6951DC]'>
 									"Together, we can build a brighter
 									future for all."
 								</p>
@@ -119,7 +119,7 @@ export default function AcademicExcellence() {
 								src='/placeholder.svg'
 								alt='Educational building'
 							/>
-							<div className='absolute bottom-0 left-0 right-0 bg-purple-600 text-white p-2 text-center'>
+							<div className='absolute bottom-0 left-0 right-0 bg-[#6951DC] text-white p-2 text-center'>
 								<p className='text-sm font-medium'>
 									1701 East North Ave., Baltimore,
 									Maryland
