@@ -8,11 +8,11 @@ import {
   SelectItem,
 } from "../ui/select";
 import Image from "next/image";
-import { NAVLINKS } from "@/lib/const";
 import NavLink from "../shared/navlink";
 import { NavBarIcon } from "@/lib/icons";
 import { useState } from "react";
 import { BookOpen } from "lucide-react";
+import { NAVLINKS } from "@/lib/const";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
