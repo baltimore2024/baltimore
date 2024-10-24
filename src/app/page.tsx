@@ -4,6 +4,7 @@ import DiscoverDifference from '@/components/home/DiscoverDifference';
 import FeaturedPrograms from '@/components/home/FeaturedPrograms';
 import HeroSection from '@/components/home/HeroSection';
 import Impact from '@/components/home/Impact';
+import { TestimonialGridComponent } from '@/components/home/testimonial-grid';
 
 export default function Home() {
 	return (
@@ -11,7 +12,8 @@ export default function Home() {
 			<HeroSection />
 			<AcademicExcellence />
 			<FeaturedPrograms />
-			<CommunityTestimonials />
+			<TestimonialGridComponent/>
+			{/* <CommunityTestimonials /> */}
 			<DiscoverDifference />
 			<Impact />
 		</div>
