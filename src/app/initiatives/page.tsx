@@ -18,7 +18,7 @@ export default function InitiativesPage() {
           </p>
         </div>
       </div>
-      <main className="">
+      <main className=" flex gap-3 flex-col">
         {INITIATIVES.map((initiative, k) => (
           <Initiatives
             key={k}
@@ -29,7 +29,6 @@ export default function InitiativesPage() {
             subInfo={initiative.subInfo}
           />
         ))}
-        <p>mmcmsco</p>
       </main>
     </div>
   );
