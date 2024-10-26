@@ -10,15 +10,17 @@ export default function FeaturedPrograms() {
 			</h2>
 			<div className=''>
 				<div
-					className='relative overflow-hidden  gradient-bg py-16 px-8'
-					style={
-						{
-							'--gradient-start': '#8B5CF6',
-							'--gradient-end': '#22D3EE',
-						} as React.CSSProperties
-					}
+					className='relative py-10 overflow-hidden '
+			
 				>
-					<div className='noise-overlay'></div>
+					<Image
+					src='/images/home/bg-stable.png'
+					objectFit='cover'
+					layout='fill'
+					className='absolute inset-0 z-0 w-full h-full'
+					alt=''
+
+					/>
 					<div className='relative text-start z-10 max-w-4xl mx-auto text-white'>
 						<h3 className='text-2xl max-w-md font-extrabold mb-4'>
 							{`Universal Vocational Institute of America
@@ -40,18 +42,16 @@ export default function FeaturedPrograms() {
 					<h3 className='text-2xl font-bold mb-2'>UVIA</h3>
 					<p>{`A walkthrough of what we have in-store at UVIA`}</p>
 				</div>
-				<div className='grid md:grid-cols-2 gap-2'>
-					<div className="">
-						<div className="absolute w-[600px] h-80">
+				<div className=' grid md:grid-cols-2 gap-2'>
+					<div className="relative">
 							<Image
-							width={100}
-							height={100}
+							objectFit='cover'
+							layout='fill'
 							quality={100}
 							src='/images/home/bg-card2.png'
 							alt=''
-							className='w-full h-full'
+							className='w-full h-full absolute inset-0 z-0'
 							/>
-						</div>
 
 					<div className='overflow-hidden p-8'>
 						
@@ -72,20 +72,18 @@ export default function FeaturedPrograms() {
 					</div>
 					</div>
 					
-					<div className="flex-shrink-0 gap-3">
-						<div className="absolute  w-[593px] h-80">
+					<div className="relative gap-3">
 							<Image
-							width={100}
-							height={100}
 							quality={100}
+							objectFit='cover'
+							layout='fill'
 							src='/images/home/bg-card.png'
 							alt=''
-							className='w-full h-full'
+							className='w-full absolute inset-0 z-0 h-full'
 							/>
-						</div>
 
-					<div className='relative  overflow-hidden  p-8'>
-						<div className='relative   z-10 text-white'>
+					<div className='relative z-10 overflow-hidden  p-8'>
+						<div className=' text-white'>
 							<h3 className='text-2xl font-bold mb-4 w-72'>
 								{`Youth Empowerment and Mentorship`}
 							</h3>
@@ -105,18 +103,16 @@ export default function FeaturedPrograms() {
 					</div>
 
 				</div>
-				<div className='relative' >
-						<div className=" w-[1190px] h-[80svh]">
+				<div className='relative gap-3 py-10' >
 									<Image
-									width={100}
-									height={100}
+									objectFit='cover'
+									layout='fill'
 									quality={100}
 									src='/images/home/bg-community.png'
 									alt=''
-									className='w-full h-full'
+									className='w-full absolute z-0 inset-0 h-full'
 						/>
-						</div>
-					<div className=' absolute z-50 space-y-10 text-black top-10 p-9 max-w-4xl mx-auto '>
+					<div className=' relative z-10 space-y-10 text-black top-10 p-9 max-w-4xl mx-auto '>
 						<h3 className='text-3xl leading-10 font-bold  max-w-lg mb-4'>
 							{`Help Keep Baltimore Clean Community
 							Improvement Group`}
@@ -134,16 +130,18 @@ export default function FeaturedPrograms() {
 					</div>
 
 				</div>
-				<div className='relative overflow-hidden'>
-					<img
+				<div className='relative'>
+					<Image
 						src='/placeholder.svg'
 						alt='Baltimore skyline'
-						className='w-full h-[400px] object-cover'
+						objectFit='cover'
+						layout='fill'
+						className='w-full absolute inset-0 z-0 h-full'
 					/>
-					<div className='absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center'>
+					<div className='relative inset-0 bg-black bg-opacity-50 flex items-center justify-center'>
 						<PlayCircle className='w-16 h-16 text-white' />
 					</div>
-					<div className='absolute bottom-0 left-0 right-0 p-4 bg-opacity-75 text-white'>
+					<div className='relative bottom-0 left-0 right-0 p-4 bg-opacity-75 text-white'>
 						<h3 className='text-2xl font-bold mb-2'>
 							{`Cleaning up baltimore`}
 						</h3>

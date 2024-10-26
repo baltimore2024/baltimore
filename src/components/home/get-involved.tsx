@@ -1,0 +1,67 @@
+'use client'
+
+import { Hand, GraduationCap, Heart, Handshake, Megaphone, Flag } from 'lucide-react'
+import Image from 'next/image'
+
+export function GetInvolvedComponent() {
+  const involvementOptions = [
+    {
+      icon: Hand,
+      title: 'Become a Volunteer',
+      description: 'Join our dedicated team of volunteers and make a real difference in your community. Your time and skills can help us create lasting change.',
+    },
+    {
+      icon: GraduationCap,
+      title: 'Enroll in Our Programs',
+      description: 'Enhance your skills and knowledge through our educational programs. Our courses are designed to empower you for personal and professional growth.',
+    },
+    {
+      icon: Heart,
+      title: 'Support Our Mission',
+      description: 'Your donations enable us to expand our reach and impact. Every contribution, no matter the size, helps us continue our vital work in the community.',
+    },
+    {
+      icon: Handshake,
+      title: 'Partner with Us',
+      description: `We're always looking to collaborate with organizations that share our vision. Together, we can create a greater impact and drive meaningful change.`,
+    },
+    {
+      icon: Megaphone,
+      title: 'Stay Informed',
+      description: 'Follow us on social media, subscribe to our newsletter, and attend our events to stay updated on our initiatives, success stories, and upcoming opportunities.',
+    },
+    {
+      icon: Flag,
+      title: 'Advocate for Change',
+      description: 'Use your voice to promote and support our cause. Share our message with your network and help us create awareness for positive change in our community.',
+    },
+  ]
+
+  return (
+    <section className="py-12 px-4 items-center justify-center mx-auto bg-white">
+      <div className="mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-8">Get Involved</h2>
+        <div className="grid md:grid-cols-2">
+          <div className="grid grid-cols-2  gap-8">
+            {involvementOptions.map((option, index) => (
+              <div key={index} className="flex flex-col items-start">
+                <option.icon className="w-8 h-8 mb-4 text-primary" />
+                <h3 className="text-xl font-semibold mb-2">{option.title}</h3>
+                <p className="text-gray-600">{option.description}</p>
+              </div>
+            ))}
+          </div>
+          <div className="">
+            <Image
+            width={600}
+            height={400}
+            src='/placeholder.svg'
+            alt=''
+            className='rounded-lg shadow-lg'
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}

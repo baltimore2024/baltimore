@@ -1,9 +1,8 @@
 import AcademicExcellence from '@/components/home/AcademicExcellence';
-import CommunityTestimonials from '@/components/home/CommunityTestimonials';
-import DiscoverDifference from '@/components/home/DiscoverDifference';
 import FeaturedPrograms from '@/components/home/FeaturedPrograms';
 import HeroSection from '@/components/home/HeroSection';
-import Impact from '@/components/home/Impact';
+import { GetInvolvedComponent } from '@/components/home/get-involved';
+import { LandingPageComponent } from '@/components/home/landing-page';
 import { TestimonialGridComponent } from '@/components/home/testimonial-grid';
 
 export default function Home() {
@@ -14,8 +13,10 @@ export default function Home() {
 			<FeaturedPrograms />
 			<TestimonialGridComponent/>
 			{/* <CommunityTestimonials /> */}
-			<DiscoverDifference />
-			<Impact />
+			{/* <DiscoverDifference /> */}
+			<LandingPageComponent/>
+			<GetInvolvedComponent/>
+			{/* <Impact /> */}
 		</div>
 	);
 }

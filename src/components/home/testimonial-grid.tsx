@@ -21,7 +21,7 @@ const testimonials: Testimonial[] = [
     author: {
       name: "Marcus J.",
       role: "UVIA Graduate",
-      image: "/placeholder.svg?height=40&width=40"
+      image: "/images/home/student-testimonial.png"
     },
     bgColor: "white"
   },
@@ -31,7 +31,7 @@ const testimonials: Testimonial[] = [
     author: {
       name: "David M.",
       role: "Community Volunteer",
-      image: "/placeholder.svg?height=40&width=40"
+      image: "/images/home/student-testimonial.png"
     },
     bgColor: "purple"
   },
@@ -41,7 +41,7 @@ const testimonials: Testimonial[] = [
     author: {
       name: "Angela T.",
       role: "Parent of a Youth Program Participant",
-      image: "/placeholder.svg?height=40&width=40"
+      image: "/images/home/student-testimonial.png"
     },
     bgColor: "white"
   },
@@ -51,7 +51,7 @@ const testimonials: Testimonial[] = [
     author: {
       name: "Keisha L.",
       role: "Entrepreneur and Program Participant",
-      image: "/placeholder.svg?height=40&width=40"
+      image: "/images/home/student-testimonial.png"
     },
     bgColor: "purple"
   },
@@ -61,7 +61,7 @@ const testimonials: Testimonial[] = [
     author: {
       name: "Sheila R.",
       role: "UVIA Graduate",
-      image: "/placeholder.svg?height=40&width=40"
+      image: "/images/home/student-testimonial.png"
     },
     bgColor: "white"
   },
@@ -71,7 +71,7 @@ const testimonials: Testimonial[] = [
     author: {
       name: "Latoya W.",
       role: "Program Participant",
-      image: "/placeholder.svg?height=40&width=40"
+      image: "/images/home/student-testimonial.png"
     },
     bgColor: "purple"
   }
@@ -88,14 +88,16 @@ export function TestimonialGridComponent() {
             </CardHeader>
             <CardContent>
               <p className="mb-4">{testimonial.content}</p>
-              <div className="flex items-center">
+              <div className="flex gap-3 items-center">
+                <div className="w-[40px] h-[40px]">
                 <Image
                   src={testimonial.author.image}
                   alt={testimonial.author.name}
-                  width={40}
-                  height={40}
-                  className="rounded-full mr-3"
+                  width={50}
+                  height={50}
+                  className=" object-cover h-[50px] w-[50px] rounded-full"
                 />
+                </div>
                 <div>
                   <p className="font-semibold">{testimonial.author.name}</p>
                   <p className="text-sm opacity-75">{testimonial.author.role}</p>

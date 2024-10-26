@@ -16,13 +16,15 @@ import {
 	Clipboard,
 	Brain,
 } from 'lucide-react';
+import Image from 'next/image';
+
 
 const programs = [
 	{
 		title: 'Universal Vocational Institute of America (UVIA)',
 		description:
 			'Empowering individuals through education is at the heart of our mission. UVIA offers a wide range of vocational training programs that provide practical skills and certifications in high-demand fields such as technology, healthcare, and skilled trades. Our programs include:',
-		gradient: 'from-purple-400 to-indigo-600',
+		gradient: '/images/program/section1.png',
 		items: [
 			{
 				title: 'Technology Training',
@@ -62,7 +64,7 @@ const programs = [
 		title: 'Economic Empowerment Programs',
 		description:
 			'Economic independence is crucial for personal and community growth. Our economic empowerment initiatives provide essential support services, including:',
-		gradient: 'from-green-400 to-emerald-600',
+		gradient: '/images/program/section2.png',
 		items: [
 			{
 				title: 'Business Mentorship',
@@ -106,7 +108,7 @@ const programs = [
 		title: 'Help Keep Baltimore Clean Community Improvement Group',
 		description:
 			'A clean and vibrant community is essential for the well-being of its residents. Our community improvement initiative focuses on environmental stewardship and community beautification through:',
-		gradient: 'from-blue-400 to-cyan-600',
+		gradient: '/images/program/section3.png',
 		items: [
 			{
 				title: 'Neighborhood Clean-Ups',
@@ -147,7 +149,7 @@ const programs = [
 		title: 'Youth Empowerment and Mentorship',
 		description:
 			'Our youth programs aim to inspire and guide the next generation of leaders. We offer:',
-		gradient: 'from-teal-400 to-cyan-600',
+		gradient: '/images/program/section4.png',
 		items: [
 			{
 				title: 'Mentorship Programs',
@@ -181,7 +183,7 @@ const programs = [
 		title: 'Community Health and Wellness',
 		description:
 			'Promoting health and wellness is a vital component of our work. We provide programs and resources that address both physical and mental health, including:',
-		gradient: 'from-red-400 to-rose-600',
+		gradient: '/images/program/section5.png',
 		items: [
 			{
 				title: 'Fitness Classes',
@@ -242,12 +244,21 @@ export default function ProgramsPage() {
 					{programs.map((program, index) => (
 						<section
 							key={index}
-							className={`mb-12 p-8 rounded-lg bg-gradient-to-br ${program.gradient}`}
+							className='relative py-16'
+							
 						>
+							<Image
+							layout='fill'
+							alt='background'
+							objectFit='cover'
+							src={program.gradient}
+							className='absolute inset-0 z-0'
+							/>
+							<div className="mx-auto px-4 relative z-10">
 							<h2 className='text-3xl font-bold mb-4 text-white'>
 								{program.title}
 							</h2>
-							<p className='text-xl text-white mb-6'>
+							<p className='text-xl font-normal text-white mb-6'>
 								{program.description}
 							</p>
 							<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
@@ -285,6 +296,7 @@ export default function ProgramsPage() {
 										</Card>
 									)
 								)}
+							</div>
 							</div>
 						</section>
 					))}
