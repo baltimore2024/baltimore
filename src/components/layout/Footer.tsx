@@ -58,8 +58,8 @@ export default function Footer() {
             <p>
               © 2024 Black Economic Improvement Forum, Inc. All rights reserved.
             </p>
-            <Link href="">TERMS AND CONDITIONS</Link>
-            <Link href="">PRIVACY POLICY</Link>
+            <Link href="/terms-and-conditions">TERMS AND CONDITIONS</Link>
+            <Link href="/privacy-policy">PRIVACY POLICY</Link>
           </div>
         </div>
 

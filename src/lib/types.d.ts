@@ -21,3 +21,18 @@ interface IInitiativeCards {
     description: string;
   }[];
 }
+
+interface ITileCards {
+  image: string;
+  title: string;
+  detail: string;
+  read?: string;
+  type?: string;
+  className?: string;
+}
+
+interface IStories {
+  title: string;
+  name: string;
+  detail: string;
+}

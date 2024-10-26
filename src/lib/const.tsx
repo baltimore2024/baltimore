@@ -266,3 +266,88 @@ export const INITIATIVES = [
     ],
   },
 ];
+
+export const NEWS = [
+  {
+    image: "/news-image-1.png",
+    title: "BEIC Launches New Vocational Training Program",
+    detail:
+      "We are excited to announce the launch of a new vocational training program at the Universal Vocational Institute of America (UVIA). This program offers certifications in emerging technology fields, including cybersecurity and data analytics, to equip our community members with the skills needed for high-demand careers.",
+    read: "5",
+    type: "news",
+  },
+  {
+    image: "/news-image-2.png",
+    title: "Help Keep Baltimore Clean Kicks Off Summer Clean-Up Campaign",
+    detail:
+      "Our Help Keep Baltimore Clean initiative is kicking off its summer clean-up campaign with a series of community events. Volunteers will be gathering to clean local parks, streets, and public spaces. Join us in making Baltimore a cleaner and more beautiful place to live!",
+    read: "5",
+    type: "news",
+  },
+  {
+    image: "/news-image-3.png",
+    title: "BEIC Receives Grant for Economic Empowerment Initiatives",
+    detail:
+      "We are thrilled to share that BEIC has received a substantial grant from the State Government of Maryland to support our economic empowerment initiatives. This funding will allow us to expand our financial literacy workshops, business mentorship programs, and investment resources.",
+    read: "5",
+    type: "news",
+  },
+];
+
+export const EVENTS = [
+  {
+    image: "/events-image-1.png",
+    title: "Community Clean-Up Day",
+    detail:
+      "Join us for a day of community clean-up and beautification. All volunteers are welcome, and supplies will be provided.",
+    type: "events",
+  },
+  {
+    image: "/events-image-2.png",
+    title: "Vocational Training Information Session",
+    detail:
+      "Discover the vocational training programs available at UVIA and how they can help you achieve your career goals.",
+  },
+  {
+    image: "/events-image-3.png",
+    title: "Financial Literacy Workshop",
+    detail:
+      "Learn essential skills for managing your finances, including budgeting, saving, and investing. Open to all community members.",
+    type: "events",
+  },
+  {
+    image: "/events-image-4.png",
+    title: "Health and Wellness Expo",
+    detail:
+      "Explore a variety of health and wellness resources, including fitness classes, nutrition advice, and mental health support.",
+    type: "events",
+  },
+  {
+    image: "/events-image-5.png",
+    title: "Business Networking Event",
+    detail:
+      "Connect with local entrepreneurs, business mentors, and investors. This is a great opportunity to grow your network and learn from industry experts.",
+    type: "events",
+  },
+];
+
+export const STORIES = [
+  {
+    title: "From Struggle to Success",
+    name: "Marcus J.’s Journey",
+    detail:
+      "Marcus J., a recent graduate of UVIA’s IT program, shares his journey from unemployment to a thriving career in cybersecurity. Marcus credits BEIC for providing the training and support needed to secure a well-paying job and build a brighter future.",
+  },
+  {
+    title: "Entrepreneurial Triumph",
+    name: "Keisha L.",
+    detail:
+      "Keisha L. attended our financial literacy workshops and received business mentorship through BEIC. Today, she runs a successful small business and is a proud employer in her community. Read about her inspiring path to entrepreneurial success.",
+  },
+  {
+    title: "Community Impact",
+    name: "David M.",
+    detail:
+      "David M., a dedicated volunteer with Help Keep Baltimore Clean, shares how participating in our clean-up events has brought positive change to his neighborhood and strengthened community bonds",
+  },
+];

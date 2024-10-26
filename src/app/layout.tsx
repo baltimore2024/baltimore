@@ -32,7 +32,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${productSans.className} antialiased flex flex-col`}>
         <Header />
-        {children}
+        <div className="mt-[60px]">{children}</div>
         <Footer />
       </body>
     </html>
