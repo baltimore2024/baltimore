@@ -93,11 +93,10 @@ export default function AcademicExcellence() {
 								</div>
 							</div>
 						</div>
-						
 					</div>
 					<div className=' top-0 left-0 right-0 p-4'>
-								<p className='text-base text-gray-500 pb-4'>
-									{`We believe that education is the
+						<p className='text-base text-gray-500 pb-4'>
+							{`We believe that education is the
 									cornerstone of personal and
 									professional development. Through
 									UVIA, we offer a range of
@@ -108,15 +107,13 @@ export default function AcademicExcellence() {
 									to healthcare and trade skills, our
 									programs are tailored to meet the
 									needs of our diverse community.`}
-								</p>
-								<span className=' text-lg font-medium text-black'>
-									{`"Together, we can build a brighter
+						</p>
+						<span className=' text-lg font-medium text-black'>
+							{`"Together, we can build a brighter
 									future for all."`}
-								</span>
-							
-					
+						</span>
+
 						<div className='relative h-full w-full'>
-							
 							<Image
 								width={100}
 								height={100}
@@ -124,7 +121,7 @@ export default function AcademicExcellence() {
 								src='/images/home/academic-excellence.png'
 								alt='Educational building'
 							/>
-							<div className='absolute bottom-0 left-0 right-0 bg-purple-600 text-white p-2 text-center'>
+							<div className='absolute bottom-0 left-0 right-0 bg-[#6951DC] text-white p-2 text-center'>
 								<p className='text-sm font-medium'>
 									{`1701 East North Ave., Baltimore,
 									Maryland`}
