@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function FeaturedPrograms() {
 	return (
-		<div className='bg-background py-16 px-8'>
+		<div className='container mx-auto bg-background py-16'>
 			<h2 className='text-3xl font-bold mb-8 text-center'>
 				{`Featured Programs`}
 			</h2>

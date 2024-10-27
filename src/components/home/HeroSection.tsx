@@ -21,7 +21,7 @@ export default function HeroSection() {
 			<div className='absolute inset-0 bg-gradient-to-b from-black/30 to-black/70 z-10'></div>
 
 			{/* Content */}
-			<div className='relative z-20 flex-grow -bottom-12 flex flex-col'>
+			<div className='container mx-auto relative z-20 flex-grow -bottom-12 flex flex-col'>
 				{/* Hero Content */}
 				<div className='flex-grow flex flex-col text-left justify-center items-start  text-white px-4'>
 					<h1 className='text-3xl md:text-4xl lg:text-5xl font-bold text-start mb-6 '>

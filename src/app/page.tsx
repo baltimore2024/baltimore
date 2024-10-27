@@ -11,11 +11,9 @@ export default function Home() {
 			<HeroSection />
 			<AcademicExcellence />
 			<FeaturedPrograms />
-			<TestimonialGridComponent/>
-			{/* <CommunityTestimonials /> */}
-			{/* <DiscoverDifference /> */}
-			<LandingPageComponent/>
-			<GetInvolvedComponent/>
+			<TestimonialGridComponent />
+			<LandingPageComponent />
+			<GetInvolvedComponent />
 			{/* <Impact /> */}
 		</div>
 	);

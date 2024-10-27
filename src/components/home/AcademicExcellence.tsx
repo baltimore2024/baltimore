@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function AcademicExcellence() {
 	return (
 		<div className='bg-[#F6F5FB] py-12 px-4 sm:px-6 lg:px-8'>
-			<div className='max-w-7xl mx-auto'>
+			<div className='container mx-auto'>
 				<div className='lg:grid lg:grid-cols-2 lg:gap-8 items-start'>
 					<div>
 						<h2 className='text-4xl font-semibold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-4xl mb-8'>
