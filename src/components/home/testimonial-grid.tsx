@@ -81,10 +81,17 @@ export function TestimonialGridComponent() {
   return (
     <div className="container mx-auto px-4 text-center items-center justify-center space-y-8 py-12">
       <h1 className="text-2xl font-bold">{`Hear from our community`}</h1>
-      <p className="text-lg font-normal w-[672px] mx-auto text-center">{`At the Black Economic Improvement Corporation (BEIC), our success is measured by the positive impact we have on the lives of individuals and the community. Here are some stories and testimonials from those who have experienced the benefits of our programs and initiatives`}</p>
+      <p className="text-lg font-normal md:w-[672px] mx-auto text-center">{`At the Black Economic Improvement Corporation (BEIC), our success is measured by the positive impact we have on the lives of individuals and the community. Here are some stories and testimonials from those who have experienced the benefits of our programs and initiatives`}</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {testimonials.map((testimonial, index) => (
-          <Card key={index} className={`${testimonial.bgColor === 'purple' ? 'bg-primary text-primary-foreground' : 'bg-[#F6F5FB]'}`}>
+          <Card
+            key={index}
+            className={`${
+              testimonial.bgColor === "purple"
+                ? "bg-primary text-primary-foreground"
+                : "bg-[#F6F5FB]"
+            }`}
+          >
             <CardHeader>
               <CardTitle>{testimonial.title}</CardTitle>
             </CardHeader>
@@ -92,25 +99,29 @@ export function TestimonialGridComponent() {
               <p className="mb-4">{testimonial.content}</p>
               <div className="flex gap-3 items-center">
                 <div className="w-[40px] h-[40px]">
-                <Image
-                  src={testimonial.author.image}
-                  alt={testimonial.author.name}
-                  width={50}
-                  height={50}
-                  className=" object-cover h-[50px] w-[50px] rounded-full"
-                />
+                  <Image
+                    src={testimonial.author.image}
+                    alt={testimonial.author.name}
+                    width={50}
+                    height={50}
+                    className=" object-cover h-[40px] w-[50px] rounded-full"
+                  />
                 </div>
                 <div>
-                  <p className="font-semibold">{testimonial.author.name}</p>
-                  <p className="text-sm opacity-75">{testimonial.author.role}</p>
+                  <p className="font-semibold text-left">
+                    {testimonial.author.name}
+                  </p>
+                  <p className="text-sm text-left opacity-75">
+                    {testimonial.author.role}
+                  </p>
                 </div>
               </div>
             </CardContent>
           </Card>
         ))}
       </div>
-      <h1 className='text-2xl font-bold'>{`Discover the difference BEIC can make in your life today`}</h1>
-     <p  className="text-lg font-normal w-[672px] mx-auto text-center">{`These testimonials reflect the heart and soul of BEIC’s mission. We are committed to continuing our efforts to empower individuals and uplift our community. We invite you to join us and become a part of this positive change.`}</p>
+      <h1 className="text-2xl font-bold">{`Discover the difference BEIC can make in your life today`}</h1>
+      <p className="text-lg font-normal md:w-[672px] mx-auto text-center">{`These testimonials reflect the heart and soul of BEIC’s mission. We are committed to continuing our efforts to empower individuals and uplift our community. We invite you to join us and become a part of this positive change.`}</p>
     </div>
-  )
+  );
 }
