@@ -5,7 +5,8 @@ import { Button } from "@/components/ui/button"
 
 export function LandingPageComponent() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen  bg-white">
+      
       <header className="relative h-[80svh] bg-gray-900 text-white">
         <Image
           src="/images/home/alumni-achievements.png"
@@ -22,7 +23,7 @@ export function LandingPageComponent() {
             </p>
           </div>
         </div>
-        <div className=" relative flex flex-col bottom-0 top-0   justify-end items-end transform translate-y-10">
+        <div className=" relative flex flex-col    justify-end items-end transform translate-y-10">
             <Image
               src="/images/home/student-testimonial.png"
               alt="Student portrait"
@@ -43,12 +44,12 @@ export function LandingPageComponent() {
           <section>
             <h2 className="text-sm font-semibold text-gray-500 mb-2">ALUMNI ACHIEVEMENTS</h2>
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              {`Our graduates go on to achieve remarkable success in their various fields.`}
+              {`Our graduates go on to achieve
+remarkable success in their various fields.`}
             </h3>
-            <p className="text-gray-600 mb-4">
+            <h4 className="text-muted-foreground mb-4">
               {`Read about their journey and how BEIC helped shape their future`}
-            </p>
-            <Button variant="outline">Read Alumni Stories</Button>
+            </h4>
           </section>
          
         </div>

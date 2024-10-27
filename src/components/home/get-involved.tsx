@@ -38,16 +38,15 @@ export function GetInvolvedComponent() {
   ]
 
   return (
-    <section className="py-12 px-4 items-center justify-center mx-auto bg-white">
+    <section className="py-6 px-4 items-center justify-center mx-auto bg-white">
       <div className="mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-8">Get Involved</h2>
         <div className="grid md:grid-cols-2">
           <div className="grid grid-cols-2  gap-8">
             {involvementOptions.map((option, index) => (
               <div key={index} className="flex flex-col items-start">
                 <option.icon className="w-8 h-8 mb-4 text-primary" />
                 <h3 className="text-xl font-semibold mb-2">{option.title}</h3>
-                <p className="text-gray-600">{option.description}</p>
+                <p className="text-gray-600 font-normal text-base">{option.description}</p>
               </div>
             ))}
           </div>

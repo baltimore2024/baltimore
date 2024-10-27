@@ -21,7 +21,7 @@ export default function FeaturedPrograms() {
 					alt=''
 
 					/>
-					<div className='relative text-start z-10 max-w-4xl mx-auto text-white'>
+					<div className='relative text-start z-10 p-8 mx-auto text-white'>
 						<h3 className='text-2xl max-w-md font-extrabold mb-4'>
 							{`Universal Vocational Institute of America
 							(UVIA)`}
@@ -37,10 +37,10 @@ export default function FeaturedPrograms() {
 						</Button>
 					</div>
 				</div>
-				<div className='bg-black text-white py-16 px-8 text-center'>
+				<div className='bg-black text-white py-16 px-8 text-start'>
 					<PlayCircle className='mx-auto mb-4 w-16 h-16' />
-					<h3 className='text-2xl font-bold mb-2'>UVIA</h3>
-					<p>{`A walkthrough of what we have in-store at UVIA`}</p>
+					<h3 className='text-2xl text-start font-bold mb-2'>UVIA</h3>
+					<p  className='font-normal text-start text-lg'>{`A walkthrough of what we have in-store at UVIA`}</p>
 				</div>
 				<div className=' grid md:grid-cols-2 gap-2'>
 					<div className="relative">
@@ -112,7 +112,7 @@ export default function FeaturedPrograms() {
 									alt=''
 									className='w-full absolute z-0 inset-0 h-full'
 						/>
-					<div className=' relative z-10 space-y-10 text-black top-10 p-9 max-w-4xl mx-auto '>
+					<div className=' relative z-10 space-y-10 text-black top-10 p-8 mx-auto '>
 						<h3 className='text-3xl leading-10 font-bold  max-w-lg mb-4'>
 							{`Help Keep Baltimore Clean Community
 							Improvement Group`}
