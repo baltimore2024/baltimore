@@ -1,6 +1,7 @@
 interface INavLink {
-	title: string;
-	link: string;
+  title: string;
+  link: string;
+  onClick?: () => void;
 }
 
 interface IconType {
