@@ -42,7 +42,7 @@ export default function Header() {
 
         <div
           className={`${
-            open ? "h-[200px]" : "h-0"
+            open ? "" : "h-0"
           } flex flex-col md:h-[20px]  overflow-clip md:flex-row gap-4`}
         >
           {NAVLINKS.map((link, i) => (
