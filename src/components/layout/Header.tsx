@@ -22,7 +22,7 @@ export default function Header() {
 
   return (
     <div className="fixed w-full z-50 bg-white">
-      <nav className="flex flex-col md:flex-row justify-start md:justify-around md:items-center gap-4 p-4 md:border-b">
+      <nav className="flex flex-col container mx-auto md:flex-row justify-start md:justify-between md:items-center gap-4 p-4 md:border-b">
         <div className="flex justify-between">
           <div>
             <Image

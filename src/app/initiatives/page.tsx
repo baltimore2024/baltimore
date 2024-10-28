@@ -6,7 +6,7 @@ export default function InitiativesPage() {
   return (
     <div className="bg-[#F6F5FB] min-h-screen">
       <div className=" text-black py-12 px-4">
-        <div className="max-w-6xl mx-auto">
+        <div className="container mx-auto">
           <h1 className="text-4xl font-bold mb-4">Initiatives</h1>
           <p className="text-xl">
             At the Black Economic Improvement Corporation (BEIC), our

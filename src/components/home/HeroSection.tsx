@@ -13,7 +13,7 @@ export default function HeroSection() {
         <source src="/videos/main-video.webm" type="video/webm" />
       </video>
       <div className="absolute bg-gradient-to-b w-full h-screen from-[#00000056] to-[#000] ">
-        <div className="flex-grow max-w-6xl flex mt-[160px] md:mt-[300px] flex-col text-left justify-center items-start  text-white px-4">
+        <div className="flex-grow container mx-auto flex mt-[160px] md:mt-[300px] flex-col text-left justify-center items-start  text-white px-4">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-start mb-6 ">
             Welcome to the Black Economic Improvement Corporation
           </h1>

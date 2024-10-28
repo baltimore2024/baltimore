@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function NewsPage() {
   return (
     <div className="min-h-screen flex flex-col bg-[#F6F5FB]">
-      <main className="flex-grow max-w-6xl mx-auto p-8   ">
+      <main className="flex-grow container mx-auto px-[20px] md:px-0 py-8   ">
         <h1 className="text-4xl font-bold text-center mb-4">News</h1>
         <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
           Stay up-to-date with the latest news and updates from the Black
