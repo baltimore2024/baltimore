@@ -185,7 +185,7 @@ const PolicySection: React.FC<PolicySection> = ({ id, title, content, subsection
 
 export function PrivacyPolicyComponent() {
   return (
-    <div className=" mx-auto pt-[30px] px-6 py-8">
+    <div className=" mx-auto px-6 pt-[70px]">
       <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
       <p className="text-lg font-normal text-black mb-8">
         Effective date: October 14, 2024

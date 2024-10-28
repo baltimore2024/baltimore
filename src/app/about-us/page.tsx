@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 export default function OurMissionPage() {
 	return (
-    <div className="bg-gray-50 min-h-screen pt-[100px]">
+    <div className="bg-gray-50 min-h-screen pt-[60px]">
       <header className="grid md:grid-cols-2 gap-4 p-4 w-full container mx-auto px-4 py-8">
         <h1 className="text-3xl font-bold text-gray-900">Our mission</h1>
         <p className="text-xl text-gray-700 mb-8">

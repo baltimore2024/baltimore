@@ -12,6 +12,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "../ui/select";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -20,6 +21,8 @@ export default function Header() {
   const openNav = () => {
     setOpen(!open);
   };
+
+  const pathName = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,9 +35,9 @@ export default function Header() {
 
   return (
     <div
-      className={`fixed w-full z-50 ${
+      className={`fixed w-full transition-all z-50 ${
         hasScrolled ? "bg-white" : " bg-transparent"
-      } `}
+      } ${open ? "bg-white" : ""} `}
     >
       <nav
         className={`flex flex-col container mx-auto md:flex-row justify-start md:justify-between md:items-center gap-4 p-4 md:border-b ${
@@ -71,7 +74,13 @@ export default function Header() {
               }}
             >
               <NavLink
-                // className={`${hasScrolled ? " text-black" : " text-white"}`}
+                className={` ${
+                  hasScrolled
+                    ? " text-black"
+                    : pathName === "/"
+                    ? " md:text-white"
+                    : " text-black"
+                }`}
                 link={link.link}
                 title={link.title}
               />
@@ -80,7 +89,15 @@ export default function Header() {
         </div>
         <div className="hidden md:flex items-center space-x-4">
           <Select>
-            <SelectTrigger className={`w-[180px`}>
+            <SelectTrigger
+              className={`w-[180px  ${
+                hasScrolled
+                  ? " text-black"
+                  : pathName === "/"
+                  ? " md:text-white"
+                  : " text-black"
+              } `}
+            >
               <SelectValue placeholder="Language" />
             </SelectTrigger>
             <SelectContent>
