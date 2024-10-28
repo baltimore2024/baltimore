@@ -231,7 +231,7 @@ const programs = [
 
 export default function ProgramsPage() {
   return (
-    <div className="bg-gray-50 min-h-screen">
+    <div className="bg-gray-50 pt-[30px] min-h-screen">
       <main className=" py-6">
         <div className="container mx-auto  px-[20px] md:px-0 ">
           <div className=" py-6">

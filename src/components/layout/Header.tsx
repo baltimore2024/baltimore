@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { NAVLINKS } from "@/lib/const";
 import { NavBarIcon } from "@/lib/icons";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import NavLink from "../shared/navlink";
 import {
   Select,
@@ -15,14 +15,32 @@ import {
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(false);
 
   const openNav = () => {
     setOpen(!open);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setHasScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="fixed w-full z-50 bg-white">
-      <nav className="flex flex-col container mx-auto md:flex-row justify-start md:justify-between md:items-center gap-4 p-4 md:border-b">
+    <div
+      className={`fixed w-full z-50 ${
+        hasScrolled ? "bg-white" : " bg-transparent"
+      } `}
+    >
+      <nav
+        className={`flex flex-col container mx-auto md:flex-row justify-start md:justify-between md:items-center gap-4 p-4 md:border-b ${
+          hasScrolled ? " md:border-b" : " md:border-b-0"
+        } `}
+      >
         <div className="flex justify-between">
           <div>
             <Image
@@ -52,13 +70,17 @@ export default function Header() {
                 setOpen(false);
               }}
             >
-              <NavLink link={link.link} title={link.title} />
+              <NavLink
+                // className={`${hasScrolled ? " text-black" : " text-white"}`}
+                link={link.link}
+                title={link.title}
+              />
             </div>
           ))}
         </div>
         <div className="hidden md:flex items-center space-x-4">
           <Select>
-            <SelectTrigger className="w-[180px]">
+            <SelectTrigger className={`w-[180px`}>
               <SelectValue placeholder="Language" />
             </SelectTrigger>
             <SelectContent>

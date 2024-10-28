@@ -29,14 +29,12 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang='en'>
-			<body
-				className={`${productSans.className} antialiased flex flex-col`}
-			>
-				<Header />
-				<div className='mt-[60px]'>{children}</div>
-				<Footer />
-			</body>
-		</html>
-	);
+    <html lang="en">
+      <body className={`${productSans.className} antialiased flex flex-col`}>
+        <Header />
+        <div className="">{children}</div>
+        <Footer />
+      </body>
+    </html>
+  );
 }

@@ -185,25 +185,30 @@ const PolicySection: React.FC<PolicySection> = ({ id, title, content, subsection
 
 export function PrivacyPolicyComponent() {
   return (
-    <div className=" mx-auto px-6 py-8">
+    <div className=" mx-auto pt-[30px] px-6 py-8">
       <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
-      <p className="text-lg font-normal text-black mb-8">Effective date: October 14, 2024</p>
+      <p className="text-lg font-normal text-black mb-8">
+        Effective date: October 14, 2024
+      </p>
       <div className="grid md:grid-cols-[300px_1fr] gap-8">
         <TableOfContents sections={policyData} />
         <div>
           {policyData.map((section) => (
             <PolicySection key={section.id} {...section} />
           ))}
-           <div className="">
-        <h1 className='font-bold text-xl'>Contact Us</h1>
-    <p className='font-normal'>  {`If you have any questions about this Privacy Policy, please contact us at:`}</p>
-    <p className='font-normal'>{`Black Economic Improvement Corporation (BEIC)`}</p>
-    <p className='font-normal'>{`Address: 305 E. Joppa Road, Towson Maryland 21286`}</p>
-    <p className='font-normal'>{`Email: tidwell@blackeconomicimprovementcorp.com`}</p>
-    <p className='font-normal'>{`Phone: +1 (410) 598-8055`}</p>
-    </div>
+          <div className="">
+            <h1 className="font-bold text-xl">Contact Us</h1>
+            <p className="font-normal">
+              {" "}
+              {`If you have any questions about this Privacy Policy, please contact us at:`}
+            </p>
+            <p className="font-normal">{`Black Economic Improvement Corporation (BEIC)`}</p>
+            <p className="font-normal">{`Address: 305 E. Joppa Road, Towson Maryland 21286`}</p>
+            <p className="font-normal">{`Email: tidwell@blackeconomicimprovementcorp.com`}</p>
+            <p className="font-normal">{`Phone: +1 (410) 598-8055`}</p>
+          </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
