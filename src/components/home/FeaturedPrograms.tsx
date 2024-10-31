@@ -124,15 +124,15 @@ export default function FeaturedPrograms() {
 						</hgroup>
 					</div>
 				</div>
-				<div className="relative h-[500px] w-full md:h-[400px]">
+				<div className="relative h-[670px] w-full md:h-[400px]">
 					<Image
 						src="/images/home/bg-community.png"
 						alt="image"
 						height={"1000"}
 						width={"1000"}
-						className="absolute h-[500px] w-full md:h-[400px]"
+						className="absolute h-[670px] w-full md:h-[400px]"
 					/>
-					<hgroup className="absolute flex flex-col gap-16 p-[50px] text-black">
+					<hgroup className="absolute flex flex-col gap-16 p-[30px] md:p-[50px] text-black">
 						<div className="l">
 							<h1 className="text-4xl font-bold md:w-[60%]">
 								Help Keep Baltimore Clean Community Improvement
