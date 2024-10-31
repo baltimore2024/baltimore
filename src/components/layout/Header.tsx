@@ -3,35 +3,35 @@ import { Button } from "@/components/ui/button";
 import { NAVLINKS } from "@/lib/const";
 import { NavBarIcon } from "@/lib/icons";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import NavLink from "../shared/navlink";
 import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
+	Select,
+	SelectContent,
+	SelectItem,
+	SelectTrigger,
+	SelectValue,
 } from "../ui/select";
-import { usePathname } from "next/navigation";
 
 export default function Header() {
-  const [open, setOpen] = useState(false);
-  const [hasScrolled, setHasScrolled] = useState(false);
+	const [open, setOpen] = useState(false);
+	const [hasScrolled, setHasScrolled] = useState(false);
 
-  const openNav = () => {
-    setOpen(!open);
-  };
+	const openNav = () => {
+		setOpen(!open);
+	};
 
-  const pathName = usePathname();
+	const pathName = usePathname();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setHasScrolled(window.scrollY > 0);
-    };
+	useEffect(() => {
+		const handleScroll = () => {
+			setHasScrolled(window.scrollY > 0);
+		};
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+		window.addEventListener("scroll", handleScroll);
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, []);
 
   return (
     <div
@@ -64,56 +64,56 @@ export default function Header() {
           </div>
         </div>
 
-        <div
-          className={`${
-            open ? "" : "h-0"
-          } flex flex-col md:h-[20px]  overflow-clip md:flex-row gap-4`}
-        >
-          {NAVLINKS.map((link, i) => (
-            <div
-              key={i}
-              onClick={() => {
-                setOpen(false);
-              }}
-            >
-              <NavLink
-                className={` ${
-                  hasScrolled
-                    ? " text-black"
-                    : pathName === "/"
-                    ? " md:text-white"
-                    : " text-black"
-                }`}
-                link={link.link}
-                title={link.title}
-              />
-            </div>
-          ))}
-        </div>
-        <div className="hidden md:flex items-center space-x-4">
-          <Select>
-            <SelectTrigger
-              className={`w-[180px  ${
-                hasScrolled
-                  ? " text-black"
-                  : pathName === "/"
-                  ? " md:text-white"
-                  : " text-black"
-              } `}
-            >
-              <SelectValue placeholder="Language" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="english">English</SelectItem>
-              <SelectItem value="deutsch">Deutsch</SelectItem>
-              <SelectItem value="french">French</SelectItem>
-            </SelectContent>
-          </Select>
-          <Button className="bg-[#6951DC] rounded-[10px] text-white">
-            Get Started
-          </Button>
-        </div>
-      </nav>
-    </div>
-  );
+				<div
+					className={`${
+						open ? "" : "h-0"
+					} flex flex-col gap-4 overflow-clip md:h-[20px] md:flex-row md:gap-6`}
+				>
+					{NAVLINKS.map((link, i) => (
+						<div
+							key={i}
+							onClick={() => {
+								setOpen(false);
+							}}
+						>
+							<NavLink
+								className={` ${
+									hasScrolled
+										? "text-black"
+										: pathName === "/"
+											? "md:text-white"
+											: "text-black"
+								}`}
+								link={link.link}
+								title={link.title}
+							/>
+						</div>
+					))}
+				</div>
+				<div className="hidden items-center gap-4 md:flex">
+					<Select>
+						<SelectTrigger
+							className={`w-[180px ${
+								hasScrolled
+									? "text-black"
+									: pathName === "/"
+										? "md:text-white"
+										: "text-black"
+							} `}
+						>
+							<SelectValue placeholder="Language" />
+						</SelectTrigger>
+						<SelectContent>
+							<SelectItem value="english">English</SelectItem>
+							{/* <SelectItem value="deutsch">Deutsch</SelectItem>
+							<SelectItem value="french">French</SelectItem> */}
+						</SelectContent>
+					</Select>
+					<Button className="rounded-[10px] bg-[#6951DC] text-white">
+						Get Started
+					</Button>
+				</div>
+			</nav>
+		</div>
+	);
 }
