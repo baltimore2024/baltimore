@@ -57,7 +57,10 @@ export default function Header() {
             <Button className="bg-[#6951DC] rounded-[10px] text-white">
               Get Started
             </Button>
-            <NavBarIcon onClick={openNav} />
+            <NavBarIcon
+              className={`${open || hasScrolled ? "text-black" : "text-white"}`}
+              onClick={openNav}
+            />
           </div>
         </div>
 

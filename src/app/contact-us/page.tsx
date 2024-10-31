@@ -27,11 +27,11 @@ export default function ContactUsPage() {
               succeed.
             </p>
             <div className="space-y-4">
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center ">
                 <EmailIcon />
-                <span>info@blackeconomicimprovementcorp.com</span>
+                <span className=' break-words' >info@blackeconomicimprovementcorp.com</span>
               </div>
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center ">
                 <PhoneIcon />
                 {/* <Phone className='w-6 h-6 text-black mr-4 ' /> */}
                 <span>+1 (410) 598-8055</span>
