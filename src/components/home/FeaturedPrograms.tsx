@@ -61,20 +61,20 @@ export default function FeaturedPrograms() {
 					</div>
 				</div>
 				<div className="relative grid h-[1000px] w-full grid-cols-1 gap-2 md:h-[370px] md:grid-cols-2">
-					<div className="relative w-full">
+					<div className="relative w-full ">
 						<Image
 							src="/images/home/bg-card2.png"
 							alt="image"
 							height={"1000"}
 							width={"1000"}
-							className="absolute h-[1000px] md:h-[370px]"
+							className="absolute h-[1000px] md:h-[50svh] md:z-30"
 						/>
-						<hgroup className="absolute p-[30px] text-white">
+						<hgroup className="absolute md:z-50 px-[30px] md:space-y-6  py-10 text-white">
 							<h1 className="text-3xl font-bold md:w-[60%]">
 								Economic Empowerment Programs
 							</h1>
 							<p className="mt-[20px]">
-								Economic independence is crucial for personal
+								{`Economic independence is crucial for personal
 								and community growth. Our economic empowerment
 								initiatives include business mentorship,
 								financial literacy workshops, and investment
@@ -83,7 +83,7 @@ export default function FeaturedPrograms() {
 								businesses, manage their finances effectively,
 								and build generational wealth. We offer
 								resources and support tailored to meet the
-								unique needs of our community.
+								unique needs of our community.`}
 							</p>
 							<Button
 								className="mt-[10px] rounded-[6px] border-2 border-white bg-transparent"
@@ -99,21 +99,21 @@ export default function FeaturedPrograms() {
 							alt="image"
 							height={"1000"}
 							width={"1000"}
-							className="absolute h-[1000px] md:h-[370px]"
+							className="absolute h-[1000px] md:h-[50svh] md:z-30"
 						/>
-						<hgroup className="absolute p-[30px] text-white">
-							<h1 className="text-3xl font-bold md:w-[60%]">
+						<hgroup className="absolute md:z-50 px-[30px] md:space-y-6 py-10 text-white">
+							<h1 className="text-3xl font-bold max-w-[60%] ">
 								Youth Empowerment and Mentorship
 							</h1>
 							<p className="mt-[20px]">
-								Our youth programs aim to inspire and guide the
+								{`Our youth programs aim to inspire and guide the
 								next generation of leaders. Through mentorship,
 								educational workshops, and community service
 								projects, we provide young people with the tools
 								and support they need to achieve their full
 								potential. Our programs focus on personal
 								development, career exploration, and leadership
-								skills.
+								skills.`}
 							</p>
 							<Button
 								className="mt-[10px] rounded-[6px] border-2 border-white bg-transparent"
@@ -124,35 +124,35 @@ export default function FeaturedPrograms() {
 						</hgroup>
 					</div>
 				</div>
-				<div className="relative h-[500px] w-full md:h-[400px]">
-					<Image
+				<div className="relative h-[110svh] bottom-10 top-50  w-full md:h-[400px]">
+					{/* <Image
 						src="/images/home/bg-community.png"
 						alt="image"
 						height={"1000"}
 						width={"1000"}
-						className="absolute h-[500px] w-full md:h-[400px]"
-					/>
-					<hgroup className="absolute flex flex-col gap-16 p-[50px] text-black">
-						<div className="l">
+						className="absolute h-[110svh] w-full md:h-[400px]"
+					/> */}
+					<hgroup className="absolute flex flex-col gap-16 px-5 py-10 text-black">
+						<div className="">
 							<h1 className="text-4xl font-bold md:w-[60%]">
 								Help Keep Baltimore Clean Community Improvement
 								Group
 							</h1>
 							<p className="mt-[20px] md:w-[70%]">
-								A clean environment is essential for the
-								well-being of our community. Our Help Keep
+								{`A clean environment is essential for the
+								well-being tof our community. Our Help Keep
 								Baltimore Clean initiative engages volunteers
 								and partners in neighborhood clean-ups,
 								recycling programs, and public awareness
 								campaigns. By working together, we strive to
 								create a cleaner, healthier, and more beautiful
 								Baltimore. Join us in making a tangible
-								difference in our city’s environment.
+								difference in our city’s environment.`}
 							</p>
 						</div>
 						<div className="">
 							<Button
-								className="mt-[10px] rounded-[6px] border-2 border-black bg-transparent"
+								className="md:mt-[10px] rounded-[6px] border-2 border-black bg-transparent"
 								variant={"outline"}
 							>
 								Show More
@@ -160,7 +160,7 @@ export default function FeaturedPrograms() {
 						</div>
 					</hgroup>
 				</div>
-				<div className="relative h-[450px] text-white">
+				<div className="relative h-[450px]  md:my-0 text-white">
 					<video
 						autoPlay
 						loop

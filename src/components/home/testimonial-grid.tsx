@@ -9,7 +9,6 @@ interface Testimonial {
 	author: {
 		name: string;
 		role: string;
-		image: string;
 	};
 	bgColor: "white" | "purple";
 }
@@ -22,7 +21,6 @@ const testimonials: Testimonial[] = [
 		author: {
 			name: "Marcus J.",
 			role: "UVIA Graduate",
-			image: "/images/home/student-testimonial.png",
 		},
 		bgColor: "white",
 	},
@@ -33,7 +31,6 @@ const testimonials: Testimonial[] = [
 		author: {
 			name: "David M.",
 			role: "Community Volunteer",
-			image: "/images/home/student-testimonial.png",
 		},
 		bgColor: "purple",
 	},
@@ -44,7 +41,6 @@ const testimonials: Testimonial[] = [
 		author: {
 			name: "Angela T.",
 			role: "Parent of a Youth Program Participant",
-			image: "/images/home/student-testimonial.png",
 		},
 		bgColor: "white",
 	},
@@ -55,7 +51,6 @@ const testimonials: Testimonial[] = [
 		author: {
 			name: "Keisha L.",
 			role: "Entrepreneur and Program Participant",
-			image: "/images/home/student-testimonial.png",
 		},
 		bgColor: "purple",
 	},
@@ -66,7 +61,6 @@ const testimonials: Testimonial[] = [
 		author: {
 			name: "Sheila R.",
 			role: "UVIA Graduate",
-			image: "/images/home/student-testimonial.png",
 		},
 		bgColor: "white",
 	},
@@ -77,7 +71,6 @@ const testimonials: Testimonial[] = [
 		author: {
 			name: "Latoya W.",
 			role: "Program Participant",
-			image: "/images/home/student-testimonial.png",
 		},
 		bgColor: "purple",
 	},
@@ -104,15 +97,7 @@ export function TestimonialGridComponent() {
 						<CardContent>
 							<p className="mb-4">{testimonial.content}</p>
 							<div className="flex items-center gap-3">
-								<div className="h-[40px] w-[40px]">
-									<Image
-										src={testimonial.author.image}
-										alt={testimonial.author.name}
-										width={50}
-										height={50}
-										className="h-[40px] w-[50px] rounded-full object-cover"
-									/>
-								</div>
+								
 								<div>
 									<p className="text-left font-semibold">
 										{testimonial.author.name}

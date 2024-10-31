@@ -12,7 +12,7 @@ export default function Home() {
 			<AcademicExcellence />
 			<FeaturedPrograms />
 			<TestimonialGridComponent />
-			<LandingPageComponent />
+			{/* <LandingPageComponent /> */}
 			<GetInvolvedComponent />
 		</div>
 	);

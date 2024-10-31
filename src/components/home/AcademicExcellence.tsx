@@ -114,7 +114,7 @@ export default function AcademicExcellence() {
 									future for all."`}
 						</span>
 
-						<div className="relative h-full w-full">
+						{/* <div className="relative h-full w-full">
 							<Image
 								width={"1000"}
 								height={"1000"}
@@ -133,7 +133,7 @@ export default function AcademicExcellence() {
 									Maryland`}
 								</p>
 							</div>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</div>

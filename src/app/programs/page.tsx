@@ -1,22 +1,4 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import {
-	Laptop,
-	Stethoscope,
-	Wrench,
-	Briefcase,
-	Calculator,
-	TrendingUp,
-	Users,
-	Lightbulb,
-	Recycle,
-	Megaphone,
-	Heart,
-	Dumbbell,
-	Clipboard,
-	Brain,
-} from 'lucide-react';
-import Image from 'next/image';
 import {
   Business,
   Career,
@@ -38,6 +20,7 @@ import {
   VolunteerPadded,
   Wellness,
 } from "@/lib/icons";
+import Image from 'next/image';
 
 const programs = [
   {
