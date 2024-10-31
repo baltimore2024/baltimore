@@ -27,17 +27,25 @@ export default function ContactUsPage() {
               succeed.
             </p>
             <div className="space-y-4">
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center w-full gap-3 ">
+                <div className="">
                 <EmailIcon />
-                <span>info@blackeconomicimprovementcorp.com</span>
+                </div>
+                <span className=' break-words' >info@blackeconomicimprovementcorp.com</span>
               </div>
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center w-full gap-3 ">
+                <div className="">
+
                 <PhoneIcon />
+                </div>
                 {/* <Phone className='w-6 h-6 text-black mr-4 ' /> */}
                 <span>+1 (410) 598-8055</span>
               </div>
-              <div className="flex items-center ">
+              <div className="flex items-center w-full gap-3 ">
+                <div className="">
+
                 <MapIcon />
+                </div>
                 {/* <MapPin className='w-6 h-6 text-black mr-4' /> */}
                 <span>305 E. Joppa Road, Towson Maryland 21286</span>
               </div>

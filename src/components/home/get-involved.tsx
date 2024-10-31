@@ -52,10 +52,10 @@ export function GetInvolvedComponent() {
 	];
 
 	return (
-		<section className="bg-white pb-[50px]">
+		<section className="bg-white my-7 pb-[50px]">
 			<div className="mx-auto md:container">
 				<div className="flex flex-col-reverse items-center justify-between gap-20 md:flex-row">
-					<div className="grid grid-cols-1 gap-8 px-[20px] md:w-[50%] md:grid-cols-2">
+					<div className="grid grid-cols-1 gap-8 px-[20px] md:w-full lg:w-[50%] md:grid-cols-2">
 						{involvementOptions.map((option, index) => (
 							<div key={index} className="grid">
 								<div className="">{option.icon}</div>
@@ -68,7 +68,7 @@ export function GetInvolvedComponent() {
 							</div>
 						))}
 					</div>
-					<div className="px-[20px] md:w-[50%]">
+					<div className="px-[20px] md:w-[50%] md:hidden lg:block block">
 						<Image
 							width={"1000"}
 							height={"1000"}

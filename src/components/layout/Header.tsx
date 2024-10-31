@@ -33,42 +33,36 @@ export default function Header() {
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
 
-	return (
-		<div
-			className={`fixed z-50 w-full transition-all ${
-				hasScrolled ? "bg-white" : "bg-transparent"
-			} ${open ? "bg-white" : ""} `}
-		>
-			<nav
-				className={`container mx-auto flex flex-col justify-start space-x-4 p-4 md:flex-row md:items-center md:justify-between md:border-b ${
-					hasScrolled ? "md:border-b" : "md:border-b-0"
-				} `}
-			>
-				<div className="flex justify-between">
-					<div>
-						<Image
-							src={`/logo-placeholder.svg`}
-							alt="logo"
-							height="40"
-							width="40"
-						/>
-					</div>
-					<div className="flex items-center gap-4 md:hidden">
-						<Button className="rounded-[10px] bg-[#6951DC] text-white">
-							Get Started
-						</Button>
-						<NavBarIcon
-							className={`${
-								hasScrolled
-									? "text-black"
-									: pathName === "/"
-										? "text-white"
-										: "text-black"
-							}`}
-							onClick={openNav}
-						/>
-					</div>
-				</div>
+  return (
+    <div
+      className={`fixed w-full transition-all z-50 ${
+        hasScrolled ? "bg-white" : " bg-transparent"
+      } ${open ? "bg-white" : ""} `}
+    >
+      <nav
+        className={`flex flex-col container mx-auto md:flex-row justify-start md:justify-between md:items-center gap-4 p-4 md:border-b ${
+          hasScrolled ? " md:border-b" : " md:border-b-0"
+        } `}
+      >
+        <div className="flex justify-between">
+          <div>
+            <Image
+              src={`/logo-placeholder.svg`}
+              alt="logo"
+              height="40"
+              width="40"
+            />
+          </div>
+          <div className="flex items-center md:hidden gap-4 ">
+            <Button className="bg-[#6951DC] rounded-[10px] text-white">
+              Get Started
+            </Button>
+            <NavBarIcon
+              className={`${pathName === "/" ? `(text-white) && ${open || hasScrolled ? "text-black" : "text-white"} ` : " text-black"}`}
+              onClick={openNav}
+            />
+          </div>
+        </div>
 
 				<div
 					className={`${

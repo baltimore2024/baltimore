@@ -78,7 +78,8 @@ const testimonials: Testimonial[] = [
 
 export function TestimonialGridComponent() {
 	return (
-		<div className="container mx-auto items-center justify-center space-y-8 px-4 py-12 text-center">
+		<div className="container md:mt-48 lg:mt-0 mx-auto items-center justify-center space-y-8 px-4 py-12 text-center">
+
 			<h1 className="text-2xl font-bold">{`Hear from our community`}</h1>
 			<p className="mx-auto text-center text-lg font-normal md:w-[672px]">{`At the Black Economic Improvement Corporation (BEIC), our success is measured by the positive impact we have on the lives of individuals and the community. Here are some stories and testimonials from those who have experienced the benefits of our programs and initiatives`}</p>
 			<div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -96,8 +97,10 @@ export function TestimonialGridComponent() {
 						</CardHeader>
 						<CardContent>
 							<p className="mb-4">{testimonial.content}</p>
-							<div className="flex items-center gap-3">
-								
+							<div className="">
+								<div className="h-[40px] w-[40px]">
+
+								</div>
 								<div>
 									<p className="text-left font-semibold">
 										{testimonial.author.name}

@@ -8,12 +8,12 @@ export default function FeaturedPrograms() {
 				{`Featured Programs`}
 			</h2>
 			<p className="mx-auto w-[80%] text-center text-[#6B7280]">
-				At the Black Economic Improvement Corporation (BEIC), we are
+				{`At the Black Economic Improvement Corporation (BEIC), we are
 				proud to offer a variety of programs designed to uplift and
 				empower our community. Our initiatives focus on education,
 				economic development, and community improvement, ensuring a
 				holistic approach to building a brighter future. Here are some
-				of our featured programs
+				of our featured programs`}
 			</p>
 			<div className="mt-[30px]">
 				<div className="relative overflow-hidden py-10">
@@ -67,7 +67,7 @@ export default function FeaturedPrograms() {
 							alt="image"
 							height={"1000"}
 							width={"1000"}
-							className="absolute h-[1000px] md:h-[50svh] md:z-30"
+							className="absolute h-[1000px] md:h-[50svh] lg:h-full md:z-30"
 						/>
 						<hgroup className="absolute md:z-50 px-[30px] md:space-y-6  py-10 text-white">
 							<h1 className="text-3xl font-bold md:w-[60%]">
@@ -99,7 +99,7 @@ export default function FeaturedPrograms() {
 							alt="image"
 							height={"1000"}
 							width={"1000"}
-							className="absolute h-[1000px] md:h-[50svh] md:z-30"
+							className="absolute h-[1000px] md:h-[50svh] lg:h-full md:z-30"
 						/>
 						<hgroup className="absolute md:z-50 px-[30px] md:space-y-6 py-10 text-white">
 							<h1 className="text-3xl font-bold max-w-[60%] ">
@@ -124,15 +124,15 @@ export default function FeaturedPrograms() {
 						</hgroup>
 					</div>
 				</div>
-				<div className="relative h-[110svh] bottom-10 top-50  w-full md:h-[400px]">
-					{/* <Image
+				<div className="relative h-[670px]  bottom-14 top-6 md:top-56 lg:top-0  w-full md:h-[400px]">
+					 <Image
 						src="/images/home/bg-community.png"
 						alt="image"
 						height={"1000"}
 						width={"1000"}
-						className="absolute h-[110svh] w-full md:h-[400px]"
-					/> */}
-					<hgroup className="absolute flex flex-col gap-16 px-5 py-10 text-black">
+						className="absolute h-[670px] w-full md:h-[400px]"
+					/>
+					<hgroup className="absolute flex space-y-6 flex-col  p-[30px]  text-black">
 						<div className="">
 							<h1 className="text-4xl font-bold md:w-[60%]">
 								Help Keep Baltimore Clean Community Improvement
@@ -160,7 +160,7 @@ export default function FeaturedPrograms() {
 						</div>
 					</hgroup>
 				</div>
-				<div className="relative h-[450px]  md:my-0 text-white">
+				<div className="relative h-[450px]  md:top-56 lg:top-0 md:my-0 text-white">
 					<video
 						autoPlay
 						loop

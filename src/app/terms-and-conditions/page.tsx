@@ -1,8 +1,8 @@
 export default function TermsAndConditionsPage() {
 	return (
-		<div className="bg-gray-8 mt-12 min-h-screen">
+		<div className="bg-gray-8 mt-12 min-h-screen container mx-auto px-4 py-4 sm:px-6 lg:px-8">
 			<header className="">
-				<div className="container mx-auto px-4 py-4 sm:px-6 lg:px-8">
+				<div className="">
 					<h1 className="text-4xl font-bold text-black">
 						Terms and conditions
 					</h1>
@@ -11,9 +11,9 @@ export default function TermsAndConditionsPage() {
 					</p>
 				</div>
 			</header>
-			<main className="mx-auto max-w-4xl pb-6 sm:px-6 lg:px-8">
-				<div className="px-4 py-6 sm:px-0">
-					<div className="prose max-w-none space-y-6">
+			<main className=" pb-6">
+				<div className="py-6 ">
+					<div className=" space-y-6">
 						<h1 className="py-4 text-3xl font-bold">
 							Introduction
 						</h1>
