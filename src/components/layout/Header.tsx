@@ -58,7 +58,7 @@ export default function Header() {
               Get Started
             </Button>
             <NavBarIcon
-              className={`${open || hasScrolled ? "text-black" : "text-white"}`}
+              className={`${pathName === "/" ? `(text-white) && ${open || hasScrolled ? "text-black" : "text-white"} ` : " text-black"}`}
               onClick={openNav}
             />
           </div>
