@@ -40,36 +40,36 @@ export default function FeaturedPrograms() {
 						</Button>
 					</div>
 				</div>
-				<div className="relative h-[400px] text-white">
+				<div className="relative aspect-video w-full text-white md:aspect-[22/9]">
 					<video
 						autoPlay
 						loop
 						muted
 						playsInline
-						className={`absolute inset-0 h-[400px] w-full object-cover transition-opacity duration-1000`}
+						className={`absolute inset-0 aspect-video w-full object-cover transition-opacity duration-1000 md:aspect-[22/9]`}
 					>
 						<source
 							src="/videos/feat_programs.webm"
 							type="video/webm"
 						/>
 					</video>
-					<div className="absolute h-[400px] w-full bg-gradient-to-b from-[#00000056] to-[#000] px-[20px] pt-[250px] md:pl-[50px]">
+					<div className="absolute flex aspect-video w-full flex-col justify-end bg-gradient-to-b from-[#00000056] to-[#000] px-[20px] pb-5 md:aspect-[22/9] md:pl-[50px]">
 						<h3 className="mb-2 text-start text-4xl font-bold">
 							UVIA
 						</h3>
 						<p className="text-start text-lg font-normal">{`A walkthrough of what we have in-store at UVIA`}</p>
 					</div>
 				</div>
-				<div className="relative grid h-[1000px] w-full grid-cols-1 gap-2 md:h-[370px] md:grid-cols-2">
-					<div className="relative w-full ">
+				<div className="relative grid w-full grid-cols-1 gap-2 md:grid-cols-2">
+					<div className="relative w-full">
 						<Image
 							src="/images/home/bg-card2.png"
 							alt="image"
 							height={"1000"}
 							width={"1000"}
-							className="absolute h-[1000px] md:h-[50svh] lg:h-full md:z-30"
+							className="absolute h-full md:z-30"
 						/>
-						<hgroup className="absolute md:z-50 px-[30px] md:space-y-6  py-10 text-white">
+						<hgroup className="relative px-[30px] py-10 text-white md:z-40 md:space-y-6">
 							<h1 className="text-3xl font-bold md:w-[60%]">
 								Economic Empowerment Programs
 							</h1>
@@ -99,10 +99,10 @@ export default function FeaturedPrograms() {
 							alt="image"
 							height={"1000"}
 							width={"1000"}
-							className="absolute h-[1000px] md:h-[50svh] lg:h-full md:z-30"
+							className="absolute h-full md:z-30"
 						/>
-						<hgroup className="absolute md:z-50 px-[30px] md:space-y-6 py-10 text-white">
-							<h1 className="text-3xl font-bold max-w-[60%] ">
+						<hgroup className="relative px-[30px] py-10 text-white md:z-40 md:space-y-6">
+							<h1 className="text-3xl font-bold">
 								Youth Empowerment and Mentorship
 							</h1>
 							<p className="mt-[20px]">
@@ -123,23 +123,22 @@ export default function FeaturedPrograms() {
 							</Button>
 						</hgroup>
 					</div>
-				</div>
-				<div className="relative h-[670px]  bottom-14 top-6 md:top-56 lg:top-0  w-full md:h-[400px]">
-					 <Image
-						src="/images/home/bg-community.png"
-						alt="image"
-						height={"1000"}
-						width={"1000"}
-						className="absolute h-[670px] w-full md:h-[400px]"
-					/>
-					<hgroup className="absolute flex space-y-6 flex-col  p-[30px]  text-black">
-						<div className="">
-							<h1 className="text-4xl font-bold md:w-[60%]">
-								Help Keep Baltimore Clean Community Improvement
-								Group
-							</h1>
-							<p className="mt-[20px] md:w-[70%]">
-								{`A clean environment is essential for the
+					<div className="relative w-full md:col-span-2">
+						<Image
+							src="/images/home/bg-community.png"
+							alt="image"
+							height={"1000"}
+							width={"1000"}
+							className="absolute w-full md:h-[400px]"
+						/>
+						<hgroup className="relative flex flex-col space-y-6 p-[30px] text-black">
+							<div className="">
+								<h1 className="text-4xl font-bold md:w-[60%]">
+									Help Keep Baltimore Clean Community
+									Improvement Group
+								</h1>
+								<p className="mt-[20px] md:w-[70%]">
+									{`A clean environment is essential for the
 								well-being tof our community. Our Help Keep
 								Baltimore Clean initiative engages volunteers
 								and partners in neighborhood clean-ups,
@@ -148,19 +147,20 @@ export default function FeaturedPrograms() {
 								create a cleaner, healthier, and more beautiful
 								Baltimore. Join us in making a tangible
 								difference in our city’s environment.`}
-							</p>
-						</div>
-						<div className="">
-							<Button
-								className="md:mt-[10px] rounded-[6px] border-2 border-black bg-transparent"
-								variant={"outline"}
-							>
-								Show More
-							</Button>
-						</div>
-					</hgroup>
+								</p>
+							</div>
+							<div className="">
+								<Button
+									className="rounded-[6px] border-2 border-black bg-transparent md:mt-[10px]"
+									variant={"outline"}
+								>
+									Show More
+								</Button>
+							</div>
+						</hgroup>
+					</div>
 				</div>
-				<div className="relative h-[450px]  md:top-56 lg:top-0 md:my-0 text-white">
+				<div className="relative h-[450px] text-white md:my-0">
 					<video
 						autoPlay
 						loop
