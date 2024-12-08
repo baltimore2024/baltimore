@@ -2,11 +2,11 @@
 
 export default function HeroSection() {
 	return (
-		<div className="relative flex min-h-screen flex-col bg-black">
+		<div className="relative flex min-h-screen flex-col bg-gradient-to-b from-blue-700 to-blue-950">
 			{/* <video
-				autoPlay
+				
 				loop
-				muted
+				
 				playsInline
 				className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000`}
 			>

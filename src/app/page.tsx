@@ -2,8 +2,6 @@ import AcademicExcellence from "@/components/home/AcademicExcellence";
 import FeaturedPrograms from "@/components/home/FeaturedPrograms";
 import HeroSection from "@/components/home/HeroSection";
 import { GetInvolvedComponent } from "@/components/home/get-involved";
-import { LandingPageComponent } from "@/components/home/landing-page";
-import { TestimonialGridComponent } from "@/components/home/testimonial-grid";
 
 export default function Home() {
 	return (
@@ -11,7 +9,7 @@ export default function Home() {
 			<HeroSection />
 			<AcademicExcellence />
 			<FeaturedPrograms />
-			<TestimonialGridComponent />
+			{/* <TestimonialGridComponent /> */}
 			{/* <LandingPageComponent /> */}
 			<GetInvolvedComponent />
 		</div>

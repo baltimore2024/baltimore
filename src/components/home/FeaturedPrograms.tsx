@@ -44,7 +44,6 @@ export default function FeaturedPrograms() {
 					<video
 						autoPlay
 						loop
-						muted
 						playsInline
 						className={`absolute inset-0 aspect-video w-full object-cover transition-opacity duration-1000 md:aspect-[22/9]`}
 					>
@@ -164,7 +163,6 @@ export default function FeaturedPrograms() {
 					<video
 						autoPlay
 						loop
-						muted
 						playsInline
 						className={`absolute inset-0 h-[450px] w-full object-cover transition-opacity duration-1000`}
 					>

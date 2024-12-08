@@ -1,7 +1,6 @@
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import Image from "next/image";
 
 interface Testimonial {
 	title: string;
@@ -78,8 +77,7 @@ const testimonials: Testimonial[] = [
 
 export function TestimonialGridComponent() {
 	return (
-		<div className="container md:mt-48 lg:mt-0 mx-auto items-center justify-center space-y-8 px-4 py-12 text-center">
-
+		<div className="container mx-auto items-center justify-center space-y-8 px-4 py-12 text-center md:mt-48 lg:mt-0">
 			<h1 className="text-2xl font-bold">{`Hear from our community`}</h1>
 			<p className="mx-auto text-center text-lg font-normal md:w-[672px]">{`At the Black Economic Improvement Corporation (BEIC), our success is measured by the positive impact we have on the lives of individuals and the community. Here are some stories and testimonials from those who have experienced the benefits of our programs and initiatives`}</p>
 			<div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -98,9 +96,7 @@ export function TestimonialGridComponent() {
 						<CardContent>
 							<p className="mb-4">{testimonial.content}</p>
 							<div className="">
-								<div className="h-[40px] w-[40px]">
-
-								</div>
+								<div className="h-[40px] w-[40px]"></div>
 								<div>
 									<p className="text-left font-semibold">
 										{testimonial.author.name}
@@ -115,7 +111,7 @@ export function TestimonialGridComponent() {
 				))}
 			</div>
 			<h1 className="text-2xl font-bold">{`Discover the difference BEIC can make in your life today`}</h1>
-			<p className="mx-auto text-center text-lg font-normal md:w-[672px]">{`These testimonials reflect the heart and soul of BEIC’s mission. We are committed to continuing our efforts to empower individuals and uplift our community. We invite you to join us and become a part of this positive change.`}</p>
+			<p className="mx-auto text-center text-lg font-normal md:w-[672px]">{`We are committed to continuing our efforts to empower individuals and uplift our community. We invite you to join and become a part of our positive change.`}</p>
 		</div>
 	);
 }
