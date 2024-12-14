@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function FeaturedPrograms() {
 	return (
@@ -35,8 +36,16 @@ export default function FeaturedPrograms() {
 						<Button
 							variant="outline"
 							className="border-white bg-transparent text-white"
+							asChild
 						>
-							Read more
+							<Link
+								download={
+									"/pdfs/Universal-Vocational-Institute-of-America-Grant-Proposal.pdf"
+								}
+								href="/pdfs/Universal-Vocational-Institute-of-America-Grant-Proposal.pdf"
+							>
+								Click here to read
+							</Link>
 						</Button>
 					</div>
 				</div>
@@ -152,8 +161,16 @@ export default function FeaturedPrograms() {
 								<Button
 									className="rounded-[6px] border-2 border-black bg-transparent md:mt-[10px]"
 									variant={"outline"}
+									asChild
 								>
-									Show More
+									<Link
+										download={
+											"/pdfs/Help-Keep-Baltimore-Clean-Community-Improvement-Group-Grant-Proposal.pdf"
+										}
+										href="/pdfs/Help-Keep-Baltimore-Clean-Community-Improvement-Group-Grant-Proposal.pdf"
+									>
+										Click here to read
+									</Link>
 								</Button>
 							</div>
 						</hgroup>
